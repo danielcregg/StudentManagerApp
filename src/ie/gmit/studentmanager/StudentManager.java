@@ -6,14 +6,22 @@ public class StudentManager {
 	private static final int INITIAL_CAPACITY = 10;
 	// Create an array to hold the student objects
 	private Student[] students = null;
-
+	
 	// Constructor - instantiate students array
 	public StudentManager() {
-		students = new Student[INITIAL_CAPACITY];
+		setStudents(new Student[INITIAL_CAPACITY]);
+	}
+	
+	// Getters and Setters
+	public Student[] getStudents() {
+		return students;
+	}
+
+	public void setStudents(Student[] students) {
+		this.students = students;
 	}
 	
 	// Create methods you may need and stub them out.
-	
 	public boolean add(Student student) {
 		return false;
 	}
@@ -22,11 +30,13 @@ public class StudentManager {
 		return false;
 	}
 	
-	public Student[] getStudentsByFirstName(String firstName) {
+	public Student[] findStudentsWithFirstName(String firstName) {
 		return null;
 	}
 
 	public int findTotalStudents() {
 		return -1;
 	}
+
+
 }
