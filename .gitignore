@@ -64,7 +64,8 @@ local.properties
 .project
 
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+# classpath is required by Eclipse to recognise project as Java project
+#.classpath
 
 # Annotation Processing
 .apt_generated
